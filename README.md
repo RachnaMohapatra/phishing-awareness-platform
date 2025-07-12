@@ -35,15 +35,12 @@ This project ensures vendors handling user data are regularly tested and trained
 ---
 
 ## 📄 Key Features
-
-| Component            | Description                                                                  |
-|----------------------|------------------------------------------------------------------------------|
-| 📥 **Fake Mailbox UI** | Simulates a realistic email inbox with phishing and legitimate messages      |
-| 📉 **Fail Page**       | Displays when a user clicks a phishing link – deducts score                  |
-| 📊 **Admin Dashboard** | Allows the company's employees to track vendor performance in real-time      |
-| 🏆 **Leaderboard**     | Displays vendor rankings, scores, and badge levels                           |
-
----
+| Component         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| 📥 Fake Mailbox UI | Simulates a realistic email inbox with phishing and legitimate messages     |
+| 📉 Fail Page       | **To be implemented** – Will display when a user clicks a phishing link and deduct score |
+| 📊 Admin Dashboard | Allows the company's employees to track vendor performance in real-time     |
+| 🏆 Leaderboard     | Displays vendor rankings, scores, and badge levels        
 
 ## 🏅 Badge System
 
@@ -78,5 +75,6 @@ You can visit the link above to interact with the simulation and explore all fea
 
 ## 🛠️ Project Background
 
-> **HoneyPhish** was developed as part of a broader group submission during a hackathon.  
-> This entire simulation module – including the idea, design, and implementation – was **solely conceptualized and built by me** as my individual contribution to the project.
+This project was initially built as part of a group submission during a hackathon.  
+The concept, design, and development of this simulation module — including the mailbox UI, scoring logic, leaderboard, and core frontend — were independently created and implemented by me.
+
