@@ -41,11 +41,11 @@ This project ensures that vendors who handle user data undergo regular testing a
 | Component             | Description                                                                         | Status      |
 |----------------------|-------------------------------------------------------------------------------------|-------------|
 | 📥 Fake Mailbox UI    | Simulates a realistic email inbox with both phishing and legitimate messages.        | Implemented |
-| 📉 Fail Page         | Displays when a user clicks a phishing link and deducts their score.                 | To be implemented |
+| 📉 Fail Page         | Displays when a user clicks a phishing link and deducts their score.                 | Implemented |
 | 📊 Admin Dashboard   | Allows internal teams to track vendor performance in real-time.                      | Implemented |
 | 🏆 Leaderboard       | Displays vendor rankings, scores, and earned badges to encourage competition.       | Implemented |
-| 📧 Email Simulation  | Functionality to send simulated phishing emails to vendor accounts.                | To be implemented |
-| 📈 Reporting System  | Generates detailed reports on vendor performance and simulation results.            | To be implemented |
+| 📧 Email Simulation  | Functionality to send simulated phishing emails to vendor accounts.                | Implemented |
+| 📈 Reporting System  | Generates detailed reports on vendor performance and simulation results.            | Implemented |
 
 ---
 
