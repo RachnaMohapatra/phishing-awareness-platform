@@ -1,66 +1,73 @@
 # 🛡️ HoneyPhish: Vendor Security Awareness Simulation Platform
 
-**HoneyPhish** is a simulation platform designed to help e-commerce companies evaluate and improve the security awareness of their third-party vendors. Through realistic phishing simulations, HoneyPhish tracks employee actions, awards scores, and visualizes performance data in an engaging, gamified interface.
+**HoneyPhish** is a comprehensive simulation platform designed to help organizations evaluate and enhance the security awareness of their third-party vendors. By deploying realistic phishing simulations, HoneyPhish tracks vendor actions, calculates scores, and visualizes performance data through an engaging, gamified interface. This helps ensure vendors maintain strong security practices when handling sensitive data.
 
 ---
 
 ## 🔍 Overview
 
-In large-scale enterprises like e-commerce companies, sensitive data often passes through third-party vendors. **HoneyPhish** helps ensure vendors maintain strong security hygiene by:
+In today's interconnected digital landscape, organizations often share sensitive data with third-party vendors. **HoneyPhish** serves as a crucial tool to ensure these vendors adhere to robust security standards by:
 
-- Sending phishing simulation emails from `HoneyPhish@company.com`.
-- Tracking whether vendors click links or report the email.
-- Automatically adjusting scores based on actions.
-- Displaying real-time performance data to internal security teams.
-- Encouraging healthy competition with a vendor-facing leaderboard.
+- **Simulating Phishing Emails**: Sending realistic phishing simulation emails to vendors.
+- **Action Tracking**: Monitoring whether vendors click on links or report the suspicious emails.
+- **Automated Scoring**: Automatically adjusting scores based on vendor actions.
+- **Real-time Data Visualization**: Providing internal security teams with real-time performance data through an intuitive dashboard.
+- **Gamified Leaderboard**: Fostering healthy competition and engagement through a vendor-facing leaderboard.
 
 ---
 
 ## 💡 Use Case
 
-During a phishing simulation:
+Consider the following scenarios during a phishing simulation:
 
-- ❌ If a vendor **clicks** the phishing link:  
-  → They're redirected to a **"Test Failed"** page  
-  → Their **score decreases**  
-  → Their **rank drops** on the leaderboard
+- ❌ **Scenario 1: Clicked Phishing Link**
+  - If a vendor clicks on the phishing link:
+    - → They are redirected to a **"Test Failed"** page, reinforcing the importance of vigilance.
+    - → Their **score decreases**, reflecting the security lapse.
+    - → Their **rank drops** on the leaderboard, creating awareness and encouraging improvement.
 
-- ✅ If a vendor **reports** the phishing email:  
-  → Their **score increases**  
-  → Their **rank improves**  
-  → They're rewarded with a **badge**
+- ✅ **Scenario 2: Reported Phishing Email**
+  - If a vendor reports the phishing email:
+    - → Their **score increases**, acknowledging their security awareness.
+    - → Their **rank improves** on the leaderboard, motivating continued diligence.
+    - → They are rewarded with a **badge**, recognizing their achievement.
 
-This project ensures vendors handling user data are regularly tested and trained in a safe, gamified, and automated way.
+This project ensures that vendors who handle user data undergo regular testing and training in a secure, gamified, and automated environment, thereby reducing the risk of security breaches.
 
 ---
 
-## 📄 Key Features
-| Component         | Description                                                                 |
-|------------------|-----------------------------------------------------------------------------|
-| 📥 Fake Mailbox UI | Simulates a realistic email inbox with phishing and legitimate messages     |
-| 📉 Fail Page       | **To be implemented** – Will display when a user clicks a phishing link and deduct score |
-| 📊 Admin Dashboard | Allows the company's employees to track vendor performance in real-time     |
-| 🏆 Leaderboard     | Displays vendor rankings, scores, and badge levels        
+## ⚙️ Key Features
+
+| Component             | Description                                                                         | Status      |
+|----------------------|-------------------------------------------------------------------------------------|-------------|
+| 📥 Fake Mailbox UI    | Simulates a realistic email inbox with both phishing and legitimate messages.        | Implemented |
+| 📉 Fail Page         | Displays when a user clicks a phishing link and deducts their score.                 | To be implemented |
+| 📊 Admin Dashboard   | Allows internal teams to track vendor performance in real-time.                      | Implemented |
+| 🏆 Leaderboard       | Displays vendor rankings, scores, and earned badges to encourage competition.       | Implemented |
+| 📧 Email Simulation  | Functionality to send simulated phishing emails to vendor accounts.                | To be implemented |
+| 📈 Reporting System  | Generates detailed reports on vendor performance and simulation results.            | To be implemented |
+
+---
 
 ## 🏅 Badge System
 
-Vendors earn badges based on their current score:
+Vendors earn badges based on their cumulative score, which reflects their security awareness and performance in the simulations:
 
-| Badge        | Score Range | Description               |
-|--------------|-------------|---------------------------|
-| 🏆 **Platinum**   | ≥ 90        | Elite Security Expert     |
-| 🥇 **Gold**       | ≥ 80        | Advanced Security         |
-| 🥈 **Silver**     | ≥ 70        | Good Security Awareness   |
-| 🥉 **Bronze**     | ≥ 60        | Basic Security Training   |
-| ❌ **None**       | < 60        | Needs Improvement         |
+| Badge        | Score Range | Description                       |
+|--------------|-------------|-----------------------------------|
+| 🏆 **Platinum**   | ≥ 90        | Elite Security Expert - Demonstrates exceptional security awareness. |
+| 🥇 **Gold**       | ≥ 80        | Advanced Security - Exhibits strong security practices.            |
+| 🥈 **Silver**     | ≥ 70        | Good Security Awareness - Shows a solid understanding of security protocols. |
+| 🥉 **Bronze**     | ≥ 60        | Basic Security Training - Requires further improvement.              |
+| ❌ **None**       | < 60        | Needs Improvement - Indicates a significant lack of security awareness.     |
 
 ---
 
 ## 🧠 Tech Stack
 
-- **Frontend**: React (TypeScript), Tailwind CSS, Vite  
-- **Icons**: Lucide React  
-- **Logic**: Local state + mock data  
+- **Frontend**: React (TypeScript), Tailwind CSS, Vite
+- **Icons**: Lucide React
+- **Logic**: Local state + mock data
 
 ---
 
@@ -69,12 +76,12 @@ Vendors earn badges based on their current score:
 🚀 The project is live and hosted on **Netlify**:  
 🔗 [https://phishing-awareness-platform.netlify.app](https://phishing-awareness-platform.netlify.app)
 
-You can visit the link above to interact with the simulation and explore all features in action.
+Feel free to explore the platform and interact with the simulation to see all the features in action.
 
 ---
 
 ## 🛠️ Project Background
 
-This project was originally built as part of a cybersecurity-focused hackathon. The concept, design, and full implementation of this simulation module — including the phishing mailbox UI, scoring system, leaderboard, and dashboard — were individually developed by me.
+This project was initially developed during a cybersecurity hackathon. The entire concept, design, and implementation of this simulation module—including the phishing mailbox UI, scoring system, leaderboard, and dashboard—were independently created by me.
 
-The platform mimics real-world vendor risk scenarios and aligns with how large-scale product companies ensure third-party security compliance.
+The platform emulates real-world vendor risk scenarios and aligns with the strategies used by large-scale product companies to ensure third-party security compliance, providing a practical and effective solution for enhancing vendor security awareness.
