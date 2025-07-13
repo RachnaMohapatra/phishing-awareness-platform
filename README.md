@@ -75,6 +75,6 @@ You can visit the link above to interact with the simulation and explore all fea
 
 ## 🛠️ Project Background
 
-This project was initially built as part of a group submission during a hackathon.  
-The concept, design, and development of this simulation module — including the mailbox UI, scoring logic, leaderboard, and core frontend — were independently created and implemented by me.
+This project was originally built as part of a cybersecurity-focused hackathon. The concept, design, and full implementation of this simulation module — including the phishing mailbox UI, scoring system, leaderboard, and dashboard — were individually developed by me.
 
+The platform mimics real-world vendor risk scenarios and aligns with how large-scale product companies ensure third-party security compliance.
