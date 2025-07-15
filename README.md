@@ -1,34 +1,38 @@
 # 🛡️ HoneyPhish: Vendor Security Awareness Simulation Platform
 
-**HoneyPhish** is a comprehensive simulation platform designed to help organizations evaluate and enhance the security awareness of their third-party vendors. By deploying realistic phishing simulations, HoneyPhish tracks vendor actions, calculates scores, and visualizes performance data through an engaging, gamified interface. This ensures vendors maintain strong cybersecurity practices when handling sensitive data.
+**HoneyPhish** is a comprehensive simulation platform designed to help organizations evaluate and enhance the security awareness of their third-party vendors. By deploying realistic phishing simulations, HoneyPhish tracks vendor actions, calculates scores, and visualizes performance data through an engaging, gamified interface. This helps ensure vendors maintain strong security practices when handling sensitive data.
 
 ---
 
 ## 🔍 Overview
 
-In today's interconnected digital landscape, organizations frequently share sensitive data with third-party vendors. **HoneyPhish** acts as a crucial defense layer by:
+In today's interconnected digital landscape, organizations often share sensitive data with third-party vendors. **HoneyPhish** serves as a crucial tool to ensure these vendors adhere to robust security standards by:
 
 - **Simulating Phishing Emails**: Sending realistic phishing simulation emails to vendors.
-- **Action Tracking**: Monitoring whether vendors click on links or report suspicious emails.
-- **Automated Scoring**: Dynamically adjusting scores based on user behavior.
-- **Real-time Data Visualization**: Offering performance insights through an intuitive dashboard.
-- **Gamified Leaderboard**: Encouraging security awareness through badges and rankings.
+- **Action Tracking**: Monitoring whether vendors click on links or report the suspicious emails.
+- **Automated Scoring**: Automatically adjusting scores based on vendor actions.
+- **Real-time Data Visualization**: Providing internal security teams with real-time performance data through an intuitive dashboard.
+- **Gamified Leaderboard**: Fostering healthy competition and engagement through a vendor-facing leaderboard.
 
 ---
 
 ## 💡 Use Case
 
-**Scenario 1: Clicked Phishing Link (❌)**  
-- Vendor is redirected to a **“Test Failed”** page.  
-- Score decreases.  
-- Leaderboard rank drops to reinforce improvement areas.
+Consider the following scenarios during a phishing simulation:
 
-**Scenario 2: Reported Phishing Email (✅)**  
-- Score increases.  
-- Rank improves on the leaderboard.  
-- A badge is awarded, reinforcing secure behavior.
+- ❌ **Scenario 1: Clicked Phishing Link**
+  - If a vendor clicks on the phishing link:
+    - → They are redirected to a **"Test Failed"** page, reinforcing the importance of vigilance.
+    - → Their **score decreases**, reflecting the security lapse.
+    - → Their **rank drops** on the leaderboard, creating awareness and encouraging improvement.
 
-HoneyPhish builds long-term security awareness by delivering real-time feedback, engaging UI, and measurable metrics—all within a controlled simulation.
+- ✅ **Scenario 2: Reported Phishing Email**
+  - If a vendor reports the phishing email:
+    - → Their **score increases**, acknowledging their security awareness.
+    - → Their **rank improves** on the leaderboard, motivating continued diligence.
+    - → They are rewarded with a **badge**, recognizing their achievement.
+
+This project ensures that vendors who handle user data undergo regular testing and training in a secure, gamified, and automated environment, thereby reducing the risk of security breaches.
 
 ---
 
@@ -36,45 +40,47 @@ HoneyPhish builds long-term security awareness by delivering real-time feedback,
 
 | Component             | Description                                                                         | Status      |
 |----------------------|-------------------------------------------------------------------------------------|-------------|
-| 📥 Fake Mailbox UI    | Simulates a realistic inbox with phishing and legitimate emails.                   | ✅ Done      |
-| 📉 Fail Page         | Displays failure message upon phishing click and reduces score.                    | ✅ Done      |
-| 📊 Admin Dashboard   | Allows internal teams to track vendor performance and actions.                     | ✅ Done      |
-| 🏆 Leaderboard       | Ranks vendors by awareness score and badge tier.                                   | ✅ Done      |
-| 📧 Email Simulation  | Sends simulated phishing emails for behavioral testing.                            | ✅ Done      |
-| 📈 Reporting System  | Generates detailed performance reports.                                             | ✅ Done      |
+| 📥 Fake Mailbox UI    | Simulates a realistic email inbox with both phishing and legitimate messages.        | Implemented |
+| 📉 Fail Page         | Displays when a user clicks a phishing link and deducts their score.                 | Implemented |
+| 📊 Admin Dashboard   | Allows internal teams to track vendor performance in real-time.                      | Implemented |
+| 🏆 Leaderboard       | Displays vendor rankings, scores, and earned badges to encourage competition.       | Implemented |
+| 📧 Email Simulation  | Functionality to send simulated phishing emails to vendor accounts.                | Implemented |
+| 📈 Reporting System  | Generates detailed reports on vendor performance and simulation results.            | Implemented |
 
 ---
 
 ## 🏅 Badge System
 
-| Badge         | Score Range | Description                                               |
-|---------------|-------------|-----------------------------------------------------------|
-| 🏆 Platinum    | ≥ 90        | Elite awareness – exceptional security practices          |
-| 🥇 Gold        | ≥ 80        | Advanced understanding of cybersecurity                   |
-| 🥈 Silver      | ≥ 70        | Strong baseline of security awareness                     |
-| 🥉 Bronze      | ≥ 60        | Basic security training – room for improvement            |
-| ❌ None        | < 60        | Needs improvement – at risk of security breaches          |
+Vendors earn badges based on their cumulative score, which reflects their security awareness and performance in the simulations:
+
+| Badge        | Score Range | Description                       |
+|--------------|-------------|-----------------------------------|
+| 🏆 **Platinum**   | ≥ 90        | Elite Security Expert - Demonstrates exceptional security awareness. |
+| 🥇 **Gold**       | ≥ 80        | Advanced Security - Exhibits strong security practices.            |
+| 🥈 **Silver**     | ≥ 70        | Good Security Awareness - Shows a solid understanding of security protocols. |
+| 🥉 **Bronze**     | ≥ 60        | Basic Security Training - Requires further improvement.              |
+| ❌ **None**       | < 60        | Needs Improvement - Indicates a significant lack of security awareness.     |
 
 ---
 
 ## 🧠 Tech Stack
 
-- **Frontend**: React (TypeScript), Tailwind CSS, Vite  
-- **Icons**: Lucide React  
-- **Logic**: Local state + mock data (can be extended to API/database)
+- **Frontend**: React (TypeScript), Tailwind CSS, Vite
+- **Icons**: Lucide React
+- **Logic**: Local state + mock data
 
 ---
 
 ## 🌐 Deployment
 
-🚀 **Live Demo:**  
+🚀 The project is live and hosted on **Netlify**:  
 🔗 [https://phishing-awareness-platform.netlify.app](https://phishing-awareness-platform.netlify.app)
 
-Feel free to explore the simulation and test the interactions in real time.
+Feel free to explore the platform and interact with the simulation to see all the features in action.
 
 ---
 
-## 📜 Project Background
+## 🛠️ Project Background
 
 **HoneyPhish** originated as an idea I independently conceptualized and built, focused on training and evaluating vendors on phishing awareness through gamified simulations and automated scoring.
 
@@ -83,5 +89,3 @@ This version was developed entirely by me — including the phishing mailbox UI,
 Later, the concept was adapted as the foundation for a **cybersecurity hackathon project**, where it was collaboratively expanded to align with the theme of *"Building Trust in Retail with Cybersecurity."* However, this repository represents my original vision, fully implemented as a solo project.
 
 HoneyPhish addresses a growing need for vendor-side security accountability and empowers enterprises to build trust through transparency, simulation, and ongoing security education.
-
-
